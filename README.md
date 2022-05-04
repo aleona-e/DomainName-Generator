@@ -46,7 +46,7 @@ Just add the files into the JS folder and import the file/variables into your in
 
 This boilerplate is 100% compatible with the free github pages hosting. Publish your website by running:
 ```sh
-$ npm run deploy
+
 ```
 
 Very easy and in just one step!  Push to your __master__ branch and use the free hosting that comes with [GitHub pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages), the project is ready to be published. Remember to choose to run the Github Page from your master branch.

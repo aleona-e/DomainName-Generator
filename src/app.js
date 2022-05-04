@@ -1,15 +1,16 @@
-/* eslint-disable */
+/* eslint-disable 
 import "bootstrap";
 import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
+*/
 
 window.onload = function() {
   let pronoun = ["my", "your", "the", "our"];
   let adj = ["big", "amazing", "fancy", "pink"];
   let noun = ["plant", "car", "sunset", "mouse"];
-  let extension = [".com", ".io", ".co", ".es"];
+  let extension = [".com<br>", ".io<br>", ".co<br>", ".es<br>"];
 
   //forEach
   function domainNameGeneratorForEach() {
@@ -30,7 +31,7 @@ window.onload = function() {
 
   let all = domainNameGeneratorForEach();
   let lin = document.getElementById("domain");
-  lin.innerHTML = all;
+  lin.innerHTML = `${all}`;
   console.log(domainNameGeneratorForEach);
 };
 
