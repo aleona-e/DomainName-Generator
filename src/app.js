@@ -1,16 +1,8 @@
-/* eslint-disable 
-import "bootstrap";
-import "./style.css";
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-*/
-
 window.onload = function() {
   let pronoun = ["my", "your", "the", "our"];
   let adj = ["big", "amazing", "fancy", "pink"];
   let noun = ["plant", "car", "sunset", "mouse"];
-  let extension = [".com<br>", ".io<br>", ".co<br>", ".es<br>"];
+  let extension = [".com", ".io", ".co", ".es"];
 
   //forEach
   function domainNameGeneratorForEach() {
@@ -30,8 +22,16 @@ window.onload = function() {
   }
 
   let all = domainNameGeneratorForEach();
-  let lin = document.getElementById("domain");
-  lin.innerHTML = `${all}`;
+  let ul = document.getElementById("domain");
+  //for each element in the array create a li tag
+  all.forEach(function(element) {
+    let li = document.createElement("li");
+    //each li is a domain
+    li.innerHTML = element;
+    //put the li(s) inside the ul
+    ul.appendChild(li);
+  });
+
   console.log(domainNameGeneratorForEach);
 };
 
